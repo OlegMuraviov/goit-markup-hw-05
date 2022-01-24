@@ -473,10 +473,10 @@ body {
 }
 .images-thumb-text {
   position: absolute;
-  top: 0;
+  top: bottom;
   left: 0;
   opacity: 0;
-  transform: translateY(100%) 250ms, opacity(1);
+  transform: translateY(-100%) 250ms;
   transition: 250ms;
   overflow: auto;
 
@@ -498,7 +498,8 @@ body {
   color: #ffffff;
 }
 .images-item:hover .images-thumb-text {
-  transform: translateY, opacity;
+  opacity: 1;
+  transform: translateY(-100%);
 }
 
 .images-border {
@@ -720,4 +721,5 @@ body {
   right: 10px;
   width: 30px;
   height: 30px;
+  opacity: 1;
 }

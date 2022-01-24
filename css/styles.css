@@ -475,6 +475,7 @@ body {
 .images-thumb {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 .images-thumb-text {

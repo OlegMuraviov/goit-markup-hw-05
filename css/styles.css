@@ -428,13 +428,12 @@ a.nav-item-link::after {
 
   color: var(--main-text-color);
   background-color: var(--bgc-button-portfolio);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-portfolio:hover {
   background-color: var(--hover-color);
   color: var(--bgc-additional);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-portfolio:focus {
   background-color: var(--hover-color);
@@ -461,9 +460,6 @@ a.nav-item-link::after {
 
 .images-item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .images-thumb {
@@ -474,6 +470,11 @@ a.nav-item-link::after {
   top: 0;
   left: 0;
   opacity: 0;
+  transform: translateY(100%);
+  transform: opacity(1);
+  transition: 250ms;
+  overflow: auto;
+
   width: 100%;
   height: 100%;
   padding-top: 63px;
@@ -493,6 +494,8 @@ a.nav-item-link::after {
 }
 .images-item:hover .images-thumb-text {
   opacity: 1;
+  transform: translateY(0);
+  transform: opacity (1);
 }
 
 .images-border {
@@ -557,10 +560,13 @@ a.nav-item-link::after {
   justify-content: center;
   width: 100%;
   height: 100%;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
   color: #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   width: 106px;
@@ -578,9 +584,6 @@ a.nav-item-link::after {
 .clients-link:focus {
   border: 1px solid var(--hover-color);
   color: var(--hover-color);
-  transition-property: border, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------FOOTER STYLES--------------------- */
@@ -662,7 +665,9 @@ a.nav-item-link::after {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
   fill: var(--bgc-button-portfolio);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-right-link:hover,
 .footer-right-link:focus {
@@ -672,9 +677,6 @@ a.nav-item-link::after {
 .footer-right-link:hover .footer-right-icon,
 .footer-right-link:focus .footer-right-icon {
   fill: var(--bgc-button-portfolio);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------------------MODAL--------------------- */
 .backdrop {

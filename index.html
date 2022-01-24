@@ -37,7 +37,7 @@
               <a class="nav-item-link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link" href="">Контакты</a>
+              <a class="nav-item-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -70,7 +70,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button-studio" type="button">Заказать услугу</button>
+          <button class="button-studio" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- -------------------studio advantages------------------- -->
@@ -134,25 +136,35 @@
           <h2 class="wwd-title">Чем мы занимаемся</h2>
           <ul class="wwd-list">
             <li class="wwd-item">
-              <img
-                src="./images/website-for-pc.jpg"
-                alt="developing website for pc"
-                width="370"
-              />
+              <div class="wwd-item-thumb">
+                <img
+                  class="wwd-item-img"
+                  src="./images/website-for-pc.jpg"
+                  alt="developing website for pc"
+                  width="370"
+                />
+                <span class="wwd-item-text">Десктопные приложения</span>
+              </div>
             </li>
             <li class="wwd-item">
-              <img
-                src="./images/website-for-mobile.jpg"
-                alt="developing website for mobile"
-                width="370"
-              />
+              <div class="wwd-item-thumb">
+                <img
+                  src="./images/website-for-mobile.jpg"
+                  alt="developing website for mobile"
+                  width="370"
+                />
+                <span class="wwd-item-text">Мобильные приложения</span>
+              </div>
             </li>
             <li class="wwd-item">
-              <img
-                src="./images/website-for-tab.jpg"
-                alt="developing website for tab"
-                width="370"
-              />
+              <div class="wwd-item-thumb">
+                <img
+                  src="./images/website-for-tab.jpg"
+                  alt="developing website for tab"
+                  width="370"
+                />
+                <span class="wwd-item-text">Дизайнерские решения</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,5 +441,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- -------------------MODAL------------------- -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <a data-modal-close class="modal-close-link" href="#"
+          ><svg class="modal-close-icon">
+            <use href="images/icon.svg#icon-close"></use></svg
+        ></a>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

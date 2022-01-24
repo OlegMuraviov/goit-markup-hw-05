@@ -475,7 +475,6 @@ body {
 .images-thumb {
   display: block;
   position: relative;
-  overflow: hidden;
 }
 
 .images-thumb-text {
@@ -483,8 +482,7 @@ body {
   bottom: 0;
   transform: translateY(100%);
   transition: transform 250ms;
-
-  overflow: auto;
+  overflow: hidden;
 
   width: 100%;
   height: 100%;

@@ -695,14 +695,14 @@ body {
 }
 .backdrop.is-hidden {
   opacity: 0;
-  /* visibility: none; */
+  visibility: none;
   pointer-events: none;
 }
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
 
   min-width: 530px;
   min-height: 580px;
